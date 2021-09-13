@@ -1,36 +1,40 @@
-<div>
-    <app-widget-area></app-widget-area>
-</div>
-
-<br>
-
-<mat-divider></mat-divider>
-
-<br>
-
-<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
-    <mat-card fxFlex="25">
-        <app-widget-card></app-widget-card>
-    </mat-card>
-    <mat-card fxFlex="25">
-        <app-widget-card></app-widget-card>
-    </mat-card>
-    <mat-card fxFlex="25">
-        <app-widget-card></app-widget-card>
-    </mat-card>
-    <mat-card fxFlex="25">
-        <app-widget-card></app-widget-card>
-    </mat-card>
-
-</div>
-
-<br>
-
-<mat-divider></mat-divider>
-
-<br>
-
-<div>
-    <div>Tables</div>
-    <div>Pie Charts</div>
+<div class="container">
+    <div>
+        <app-widget-area></app-widget-area>
+    </div>
+    
+    <br>
+    
+    <mat-divider></mat-divider>
+    
+    <br>
+    
+    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px" class="stats-cards">
+        <mat-card fxFlex="23">
+            <app-widget-card label="New Users" total="12k" percentage="50"></app-widget-card>
+        </mat-card>
+        <mat-card fxFlex="23">
+            <app-widget-card label="Users Retention" total="10k" percentage="40"></app-widget-card>
+        </mat-card>
+        <mat-card fxFlex="23">
+            <app-widget-card label="User Engagement" total="8k" percentage="30"></app-widget-card>
+        </mat-card>
+        <mat-card fxFlex="23">
+            <app-widget-card label="Refferals" total="18k" percentage="20"></app-widget-card>
+        </mat-card>
+    
+    </div>
+    
+    <br>
+    
+    <mat-divider></mat-divider>
+    
+    <br>
+    
+    <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+        <div fxFlex="60">Tables</div>
+        <div fxFlex="40">
+            <app-widget-pie></app-widget-pie>
+        </div>
+    </div>
 </div>
